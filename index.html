@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>WAS Insurance</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Choose Plan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4}
+.header{background:#2b2b2b;color:#fff;padding:16px;text-align:center}
+.container{display:flex;gap:20px;justify-content:center;margin:40px;flex-wrap:wrap}
+.card{background:#fff;width:280px;padding:20px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.price{font-size:24px;color:#e6b85c;margin:10px 0}
+.btn{display:block;text-align:center;margin-top:20px;padding:12px;background:#e6b85c;color:#000;text-decoration:none;border-radius:4px}
+</style>
 </head>
 <body>
 
-<section class="center">
-    <h1>WAS Insurance</h1>
-    <p>Wise and Silent – Travel Insurtech</p>
+<div class="header">Choose Your Plan</div>
 
-    <a href="solutions.html" class="btn">View Solutions</a>
-    <a href="careers.html" class="btn outline">Careers</a>
-</section>
+<div class="container">
+  <div class="card">
+    <h3>VOYAGER</h3>
+    <div class="price">$15.98</div>
+    <p>Cancellation: $1,000</p>
+    <p>Luggage: $500</p>
+    <a href="comparison.html" class="btn">Get Started</a>
+  </div>
+
+  <div class="card">
+    <h3>VOYAGER PLUS</h3>
+    <div class="price">$41.34</div>
+    <p>Cancellation: $4,000</p>
+    <p>Luggage: $1,000</p>
+    <a href="comparison.html" class="btn">Get Started</a>
+  </div>
+</div>
 
 </body>
 </html>
