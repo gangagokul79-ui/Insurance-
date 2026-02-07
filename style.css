@@ -4,15 +4,11 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
-/* FULL PAGE BACKGROUND */
 html, body {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #020617, #1e3a8a); /* DARK BLUE */
+    background: linear-gradient(135deg, #020617, #1e3a8a); 
 }
-
-/* CENTER CONTENT */
 .center {
     background: #ffffff;
     padding: 60px 40px;
@@ -22,31 +18,25 @@ html, body {
     text-align: center;
     box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
-
-/* MAIN TITLE */
 h1 {
-    font-size: 42px;       /* BIG TEXT */
+    font-size: 42px;       
     color: #020617;
     margin-bottom: 15px;
 }
-
-/* SUB TITLE */
 p {
-    font-size: 20px;       /* BIGGER */
+    font-size: 20px;       
     color: #334155;
     margin-bottom: 35px;
 }
-
-/* BUTTON */
 .btn {
-    padding: 16px 42px;    /* BIG BUTTON */
+    padding: 16px 42px;    
     margin: 12px;
     background: #2563eb;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 18px;       /* BIG TEXT */
+    font-size: 18px;       
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
@@ -56,8 +46,6 @@ p {
     background: #020617;
     transform: scale(1.05);
 }
-
-/* OUTLINE BUTTON */
 .outline {
     background: transparent;
     color: #2563eb;
@@ -68,8 +56,6 @@ p {
     background: #2563eb;
     color: white;
 }
-
-/* SOLUTION TEXT */
 .solution-text {
     display: none;
     background: #e0e7ff;
@@ -81,8 +67,6 @@ p {
     font-size: 17px;
     color: #020617;
 }
-
-/* MOBILE */
 @media (max-width: 600px) {
     h1 {
         font-size: 30px;
@@ -97,3 +81,4 @@ p {
         font-size: 16px;
     }
 }
+
