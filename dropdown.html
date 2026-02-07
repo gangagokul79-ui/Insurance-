@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Freelancer Contest - Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#1e1e1e;height:100vh}
+.topbar{height:56px;background:#2b2b2b;color:#fff;display:flex;align-items:center;padding:0 16px}
+.menu-btn{font-size:22px;cursor:pointer}
+.title{flex:1;text-align:center;font-size:16px}
+.overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);display:none}
+.side-menu{width:320px;height:100%;background:#fff;position:fixed;top:0;left:-320px;transition:.3s;padding:20px}
+.side-menu.active{left:0}
+.overlay.active{display:block}
+.menu-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.logo{font-weight:bold;font-size:18px}
+.close-btn{font-size:20px;cursor:pointer}
+.menu-item{padding:12px 0;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.menu-item.red{color:#e63946;font-weight:bold}
+.submenu{padding-left:10px;display:none}
+.submenu a{display:block;padding:8px 0;font-size:14px;color:#333;text-decoration:none}
+.menu-item.active + .submenu{display:block}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="menu-btn" onclick="openMenu()">☰</div>
+  <div class="title">Freelancer Contest</div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<div class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <div class="logo">logoipsum</div>
+    <div class="close-btn" onclick="closeMenu()">✕</div>
+  </div>
+
+  <div class="menu-item red" onclick="toggleSubmenu(this)">
+    Travel Insurance <span>⌃</span>
+  </div>
+  <div class="submenu">
+    <a href="index.html">Plans</a>
+    <a href="#">Upgrades</a>
+    <a href="#">Traveller Type</a>
+    <a href="#">Trip Type</a>
+    <a href="#">Benefits</a>
+  </div>
+
+  <div class="menu-item">Emergency Assistance</div>
+
+  <div class="menu-item" onclick="toggleSubmenu(this)">
+    Customer Service <span>⌄</span>
+  </div>
+  <div class="submenu">
+    <a href="#">Contact Us</a>
+    <a href="#">Support</a>
+  </div>
+</div>
+
+<script>
+function openMenu(){
+  sideMenu.classList.add("active");
+  overlay.classList.add("active");
+}
+function closeMenu(){
+  sideMenu.classList.remove("active");
+  overlay.classList.remove("active");
+}
+function toggleSubmenu(el){
+  el.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
