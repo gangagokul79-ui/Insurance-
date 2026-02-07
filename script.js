@@ -3,13 +3,14 @@ function showText(id) {
 
     allTexts.forEach(text => {
         if (text.id === id) {
-            if (text.style.display === "block") {
-                text.style.display = "none";
-            } else {
-                text.style.display = "block";
-            }
+            text.style.display =
+                text.style.display === "block" ? "none" : "block";
         } else {
             text.style.display = "none";
         }
     });
+}
+
+function applyNow() {
+    document.getElementById("applyMsg").style.display = "block";
 }
