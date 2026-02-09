@@ -1,38 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Plan Comparison</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparison</title>
+
 <style>
-body{margin:0;font-family:Arial;background:#f9f9f9}
-.header{background:#2b2b2b;color:#fff;padding:16px;text-align:center}
-.table{max-width:600px;margin:40px auto;background:#fff;border-radius:6px;overflow:hidden}
-.row{display:flex;border-bottom:1px solid #eee}
-.cell{flex:1;padding:12px;text-align:center}
-.head{background:#e6b85c;font-weight:bold}
+body{
+margin:0;
+font-family:Arial;
+background:#fff;
+}
+
+.header{
+background:#0d2b4d;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.container{
+padding:20px;
+}
+
+.table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.table th{
+background:#f2f2f2;
+padding:10px;
+font-size:14px;
+}
+
+.table td{
+padding:10px;
+border:1px solid #ddd;
+font-size:14px;
+text-align:center;
+}
+
+.price{
+color:#f5a623;
+font-weight:bold;
+font-size:18px;
+}
+
+button{
+background:#f5a623;
+border:none;
+color:white;
+padding:10px;
+width:100%;
+font-weight:bold;
+cursor:pointer;
+}
+
+.footer{
+background:#0d2b4d;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+font-size:13px;
+}
 </style>
 </head>
+
 <body>
 
-<div class="header">Plan Comparison</div>
+<div class="header">Compare Plans</div>
 
-<div class="table">
-  <div class="row head">
-    <div class="cell">Feature</div>
-    <div class="cell">Voyager</div>
-    <div class="cell">Voyager Plus</div>
-  </div>
-  <div class="row">
-    <div class="cell">Cancellation</div>
-    <div class="cell">$1,000</div>
-    <div class="cell">$4,000</div>
-  </div>
-  <div class="row">
-    <div class="cell">Luggage</div>
-    <div class="cell">$500</div>
-    <div class="cell">$1,000</div>
-  </div>
+<div class="container">
+
+<table class="table">
+
+<tr>
+<th></th>
+<th>VOYAGER</th>
+<th>VOYAGER PLUS</th>
+</tr>
+
+<tr>
+<td>Price</td>
+<td>$15.98</td>
+<td class="price">$41.34</td>
+</tr>
+
+<tr>
+<td>Cancellation</td>
+<td>$1,000</td>
+<td>$4,000</td>
+</tr>
+
+<tr>
+<td>Luggage</td>
+<td>$500</td>
+<td>$1,000</td>
+</tr>
+
+<tr>
+<td>Travel Delay</td>
+<td>Not Available</td>
+<td>$1,000</td>
+</tr>
+
+<tr>
+<td>Personal Liability</td>
+<td>Not Available</td>
+<td>$2,500,000</td>
+</tr>
+
+<tr>
+<td></td>
+<td><button>CHOOSE PLAN</button></td>
+<td><button>CHOOSE PLAN</button></td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="footer">
+Privacy Policy | Terms & Conditions
 </div>
 
 </body>
