@@ -2,57 +2,81 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comparison</title>
+<title>Plan Option</title>
 
 <style>
 body{
 margin:0;
 font-family:Arial;
-background:#fff;
+background:#f2f2f2;
 }
 
+/* Blue header */
 .header{
 background:#0d2b4d;
 color:white;
-padding:15px;
+padding:12px;
 text-align:center;
 }
 
 .container{
+padding:15px;
+}
+
+.trip-box{
+background:white;
+padding:15px;
+margin-bottom:15px;
+border-radius:6px;
+}
+
+.trip-box h3{
+margin:0 0 10px 0;
+}
+
+.plan-card{
+background:white;
 padding:20px;
-}
-
-.table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-
-.table th{
-background:#f2f2f2;
-padding:10px;
-font-size:14px;
-}
-
-.table td{
-padding:10px;
-border:1px solid #ddd;
-font-size:14px;
+border-radius:6px;
 text-align:center;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.plan-name{
+font-weight:bold;
+font-size:18px;
 }
 
 .price{
+font-size:26px;
 color:#f5a623;
 font-weight:bold;
-font-size:18px;
+}
+
+.table{
+margin-top:15px;
+text-align:left;
+}
+
+.table div{
+display:flex;
+justify-content:space-between;
+padding:8px 0;
+border-bottom:1px solid #eee;
+font-size:14px;
+}
+
+.select-box{
+margin-top:10px;
 }
 
 button{
 background:#f5a623;
 border:none;
 color:white;
-padding:10px;
+padding:12px;
 width:100%;
+margin-top:15px;
 font-weight:bold;
 cursor:pointer;
 }
@@ -70,61 +94,55 @@ font-size:13px;
 
 <body>
 
-<div class="header">Compare Plans</div>
+<div class="header">Plan Option</div>
 
 <div class="container">
 
-<table class="table">
+<div class="trip-box">
+<h3>Trip Details</h3>
+<p><b>Destination:</b> Australia</p>
+<p><b>Dates:</b> 04/11/2025 - 13/11/2025</p>
+<p><b>Traveller Age:</b> 23</p>
+</div>
 
-<tr>
-<th></th>
-<th>VOYAGER</th>
-<th>VOYAGER PLUS</th>
-</tr>
+<div class="plan-card">
 
-<tr>
-<td>Price</td>
-<td>$15.98</td>
-<td class="price">$41.34</td>
-</tr>
+<div class="plan-name">VOYAGER PLUS</div>
+<p>From $44.94</p>
+<div class="price">$41.34</div>
+<p>Total Cost</p>
 
-<tr>
-<td>Cancellation</td>
-<td>$1,000</td>
-<td>$4,000</td>
-</tr>
+<div class="table">
+<div><span>Cancellation</span><span>$4,000</span></div>
+<div><span>Luggage</span><span>$1,000</span></div>
+<div><span>Travel Delay</span><span>$1,000</span></div>
+<div><span>Personal Liability</span><span>$2,500,000</span></div>
+</div>
 
-<tr>
-<td>Luggage</td>
-<td>$500</td>
-<td>$1,000</td>
-</tr>
+<div class="select-box">
+<label>Rental Vehicle Excess</label>
+<select style="width:100%;padding:8px;margin-top:5px;">
+<option>Not Selected</option>
+<option>$5,000</option>
+<option>$10,000</option>
+</select>
+</div>
 
-<tr>
-<td>Travel Delay</td>
-<td>Not Available</td>
-<td>$1,000</td>
-</tr>
+<button onclick="goNext()">CHOOSE PLAN</button>
 
-<tr>
-<td>Personal Liability</td>
-<td>Not Available</td>
-<td>$2,500,000</td>
-</tr>
-
-<tr>
-<td></td>
-<td><button>CHOOSE PLAN</button></td>
-<td><button>CHOOSE PLAN</button></td>
-</tr>
-
-</table>
+</div>
 
 </div>
 
 <div class="footer">
-Privacy Policy | Terms & Conditions
+©2025 Logo Ipsum. All Rights Reserved.
 </div>
+
+<script>
+function goNext(){
+window.location.href="comparison.html";
+}
+</script>
 
 </body>
 </html>
